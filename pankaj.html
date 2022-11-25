@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+body{
+
+    background-color: #dce9e4;
+    padding: 5;
+}
+
+div{
+    align-self : center;
+    padding: 18;
+
+}
+
+table{
+        background-color : white;
+        border: 10;
+
+    } 
+</style>
+</head>
+<body>
+    <div >
+    <select name="Month" id="mnth">
+        <option >Select Month</option>
+        <option value="jan"  >January</option>
+        <option value="feb">Febuary</option>
+        <option value="mar">March</option>
+        <option value="april"  >April</option>
+        <option value="may">May</option>
+        <option value="june">June</option>
+        <option value="july">July</option>
+        <option value="aug">August</option>
+        <option value="sept">September</option>
+        <option value="oct">October</option>
+        <option value="nov">November</option>
+        <option value="Dec">December</option>
+
+    </select>
+    <select name="Year" id="yr">
+        <option >Select Year</option>
+        <option value="">2012</option>
+        <option value="">2013</option>
+        <option value="">2014</option>
+        <option value="">2015</option>
+        <option value="">2016</option>
+        <option value="">2017</option>
+        <option value="">2018</option>
+        <option value="">2019</option>
+        <option value="">2020</option>
+        <option value="">2021</option>
+        <option value="">2022</option>
+        <option value="">2023</option>
+        <option value="">2024</option>
+        <option value="">2025</option>
+        <option value="">2026</option>
+        <option value="">2027</option>
+
+    </select>
+    </div>
+    <div>
+    <table  border=1 height=100 width = 300>
+        <tbody>
+            <tr>
+				<th >Sun</th>
+				<th >Mon</th>
+				<th >Tue</th>
+				<th >Wed</th>
+				<th >Thu</th>
+				<th >Fri</th>
+				<th >Sat</th>
+			</tr>
+            <tr>
+                <td ></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td value="1"id="1">1</td>
+                <td value="2"id="2">2</td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td value="3"id="3">3</td>
+                <td value="4"id="4">4</td>
+                <td value="5"id="5">5</td>
+                <td value="6"id="6">6</td>
+                <td value="7"id="7">7</td>
+                <td value="8"id="8">8</td>
+                <td value="9"id="9">9</td>
+            </tr>
+            <tr>
+                <td value="10"id="10">10</td>
+                <td value="11"id="11">11</td>
+                <td value="12"id="12">12</td>
+                <td value="13"id="13">13</td>
+                <td value="14"id="14">14</td>
+                <td value="15"id="15">15</td>
+                <td value="16"id="16">16</td>
+            </tr>
+            <tr>
+                <td value="17"id="17">17</td>
+                <td value="18"id="18">18</td>
+                <td value="19"id="19">19</td>
+                <td value="20"id="20">20</td>
+                <td value="21"id="21">21</td>
+                <td value="22"id="22">22</td>
+                <td value="23"id="23">23</td>
+            </tr>
+            <tr>
+                <td value="24"id="24" >24</td>
+                <td value="25"id="25">25</td>
+                <td value="26"id="26">26</td>
+                <td value="27"id="27">27</td>
+                <td value="28"id="28">28</td>
+                <td value="29"id="29">29</td>
+                <td value="30" id="30">30</td>
+            </tr>
+            <tr>
+                <td value="31"id="31">31</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table> 
+</div>
+
+<input type="text" id="entdate" placeholder="Enter any DaTE">
+    <button type="button" id="btn" onclick="myFunction()" >ENTER</button>
+    <!-- <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p> -->
+    
+
+<script>
+
+
+ function myFunction() {
+        var entdate = document.getElementById("entdate").value;
+        //document.getElementById("demo").innerHTML = entdate;
+        const btn = document.getElementById('btn');
+       // document.getElementById("demo2").innerHTML = btn;
+        const pok = document.getElementById(entdate);
+       // document.getElementById("demo3").innerHTML = pok;
+        var backgroundColor = pok.style.backgroundColor;
+        if (backgroundColor === 'white') {
+    pok.style.backgroundColor = 'green';
+
+  } else {
+    pok.style.backgroundColor = 'white';
+
+  }
+    }
+
+;
+</script>
+
+</body>
+</html>
